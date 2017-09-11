@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    margin:0;
+    padding:0;
+}
+body {
+	 background-image: url('../im/woodbg.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-color: beige;
+} 
+.clear {
+   clear: both;
+}
+.navbutton {
+   display: inline;
+   float:right;
+   margin-left: 1em;
+}
+.navbutton button {
+   border-top:2px solid #777777;
+   border-right:2px solid #333333;
+   border-bottom:0px solid #444444;
+   border-left:2px solid #777777;
+   background-color: red;
+}
+a.title {
+		color:#000000;
+		font-size:12px;
+		font-family:Arial;
+}
+
+a.font1 {
+		color:#CACACA;
+		text-align:center;
+}
+h1 {
+        font-family: "Bebas Neue", Arial; 
+        font-size: 12px; 
+        color: beige;
+}
+div.header {
+   margin: 0 auto;
+   border: none;
+   width: 98%;
+   background-repeat: none;
+}
+.menuleft img {
+   border-radius: 50%;
+}
+.menu img {
+   margin-left: 1em;
+}
+.greet {
+   margin-left: 5em;
+   position: relative;
+   display: inline;
+}
+div.main {
+	width: 97%;
+   display: inline-block;
+   height: 100%;
+	margin-left:1.25%;
+   position: relative;
+	text-align: center;
+   border-color: #8e2323;
+   background-image: url('../im/dark_wood.png');
+   border-style: none;
+   border-bottom: none;
+   box-shadow: 10px 10px 5px #000;
+   border-top: none;
+   border-radius: 1px;
+}
+.homeleft {
+   background-color: brown;
+   border: solid;
+   width: 45%;
+   float: left;
+   margin-top: 3em;
+   margin-left: 2em; 
+   border-radius: 12px;
+   box-shadow: 10px 10px 5px #000;
+}
+.homelarge{
+   background-color: brown;
+   border: solid;
+   width: 90%;
+   float: left;
+   margin-top: 3em;
+   margin-left: 3em; 
+   border-radius: 12px;
+   box-shadow: 10px 10px 5px #000;.
+   margin-bottom: 1em;
+}
+.homesm{
+   background-color: brown;
+   border: solid;
+   width: 100%;
+   float: left;
+   border-radius: 12px;
+   box-shadow: 10px 10px 5px #000;.
+   margin-bottom: 1em;
+}
+div.container {
+   overflow:hidden;
+   margin: 0 auto;
+   margin-top: 1em;
+   width: 90%;
+   height: 100%;
+}
+#container {
+   font-size: 12px;
+}
+div.left {
+	width: 375px;
+	margin:0 auto;
+	margin-left:22.5px;
+	float:left;
+	color:#CACACA;
+   position: relative;
+}
+div.right {
+	width: 375px;
+	margin:0 auto;
+	margin-left:2.5px;
+	text-align: center;
+   position: relative;
+	float:left;
+	color:#CACACA;
+}
+hr.hr1 {
+	color: #171717;
+	width: auto;
+}
+.menuleft {
+	width: 20%;
+   
+   position: relative;
+	margin:0 auto;
+   margin-top: 1em;
+   margin-left: 5%;
+   color: beige;
+	float: left;
+   text-align:center;
+}
+#menuleft {
+   margin-left: 5em;
+}
+.menuright {
+	width: 15%;
+   position: relative;
+	margin:0 auto;
+   margin-top: 1em;
+   color: red;
+	float: right;
+}
+.menu {
+   float:right;
+   margin-left:1.25%;
+   width: 45%;
+      box-shadow: 5px 5px 1px #000;
+      border-radius: 5px;
+      border-color: none;
+}
+.footer {
+   color: red;
+   background-color: black !important;
+   width: 100%;
+   margin: 0 auto;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 5px;
+   box-shadow: 10px 10px 15px #000;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #8e2323;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active {
+    background-color: red;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+.monte {
+}
+.redwood {
+}
+.glenwood {
+}
+.windom {
+}
