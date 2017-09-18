@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>Duffy's Restaurants</title>
 
@@ -23,18 +24,82 @@
 
 <body>
   <script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+      $(document).ready(function() {
+        $('#redwoodf').hide();
+        $('#glenwood').hide();
+        $('#montevideo').hide();
+        $('#windom').hide();
+
+        $('#rwf').click(function(){
+          $('#mainhome').hide();
+          $('#glenwood').hide();
+          $('#montevideo').hide();
+          $('#windom').hide();
+          $('#redwoodf').show();
+        });
+
+        $('#monte').click(function(){
+          $('#mainhome').hide();
+          $('#glenwood').hide();
+          $('#redwoodf').hide();
+          $('#windom').hide();
+          $('#montevideo').show();
+        });
+        $('#glen').click(function(){
+          $('#mainhome').hide();
+          $('#redwoodf').hide();
+          $('#montevideo').hide();
+          $('#windom').hide();
+          $('#glenwood').show();
+        });
+        $('#wind').click(function(){
+          $('#windom').show();
+          $('#mainhome').hide();
+          $('#glenwood').hide();
+          $('#montevideo').hide();
+          $('#redwoodf').hide();
+        });
+      });
+
+</script>
   <div class="container">
     <div cass="top">
         <div class="topleft">
     <img src="im/logo.png" />
   </div><div class="topright">
-          <p>Testing</p>
-        </div>
-  <div class="clear"></div></div>
+          <div class="contact">
+    <form action="" method="post">
+                  <br><h1>Send us an Email!</h1>
+                    <br>
+      <legend></legend>
+        <fieldset>
+          <div class="contactright">
+          <label for="Comments"></label>
+          <textarea id="contactright" name="comments" value="Comments"></textarea>
+          <div class="clear"></div><br>
+          <div class="clear"></div></div>
+          <div class="contactleft">
+          <label for="name">&nbsp;&nbsp;Name: </name>
+          <input type="name" id="contact" name="name" value=""></input><br>
+          <label for="email">&nbsp;&nbsp;Email: </name>
+          <input type="email" id="contact" name="email" value=""></input><br>
+          <label for="Phone">&nbsp;&nbsp;Phone:</label>
+          <input type="text" id="contact" name="number"></input>
+
+                <div class="clear"></div>
+                     </div>
+                     <div class="clear"></div>
+      <div class="contactbutton">
+                  <button class="button" type="submit">Email us!</button>
+                </div>
+        </fieldset>
+<div class="clear"> </div>
+    <br>             </form>
+
+      <div class="clear"></div> </div></div>
   <div class="clear"></div>
       <div class="header">
-        <br>
-        <!----  <img src="im/topleft.jpg" /> <img src="im/topmid.jpg" /> <img src="im/topright.jpg" /> -->
         <br>
         <img id="loc" src="im/loc.png" />
         <div class="menu">
@@ -48,7 +113,7 @@
 
             <!-- normal -->
             <div class="ih-item circle effect16 left_to_right">
-              <a href="#">
+              <a id="rwf">
                 <div class="img"><img src="im/rwf.jpg" alt="img"></div>
                 <div class="info">
                   <h3>Redwood Falls</h3>
@@ -59,7 +124,7 @@
             <!-- end normal -->
 
           </div>
-          <h2> REDWOOD FALLS </H2>
+          <h3>Redwood Falls</H3>
           <div class="clear"></div>
         </div>
         <div class="menuleft">
@@ -67,7 +132,7 @@
 
             <!-- colored -->
             <div class="ih-item circle colored effect16 left_to_right">
-              <a href="#">
+                <a id="monte">
                 <div class="img"><img src="im/monte.jpg" alt="img"></div>
                 <div class="info">
                   <h3>Montevideo</h3>
@@ -78,7 +143,7 @@
             <!-- end colored -->
 
           </div>
-          <h2> Montevideo </H2>
+          <h3>Montevideo</H3>
           <div class="clear"></div>
         </div>
         <div class="menuleft">
@@ -86,7 +151,7 @@
 
             <!-- normal -->
             <div class="ih-item circle effect16 right_to_left">
-              <a href="#">
+              <a id="glen">
                 <div class="img"><img src="im/glen.jpg" alt="img"></div>
                 <div class="info">
                   <h3>Glenwood</h3>
@@ -97,7 +162,7 @@
             <!-- end normal -->
 
           </div>
-          <h2> Glennwood </H2>
+          <h3> Glennwood</H3>
           <div class="clear"></div>
         </div>
         <div class="menuleft">
@@ -105,7 +170,7 @@
 
             <!-- colored -->
             <div class="ih-item circle colored effect16 right_to_left">
-              <a href="#">
+              <a id="wind">
                 <div class="img"><img src="im/windom.jpg" alt="img"></div>
                 <div class="info">
                   <h3>Windom</h3>
@@ -116,7 +181,7 @@
             <!-- end colored-->
 
           </div>
-          <h2> Windom </H2>
+          <h3>Windom</H3>
           <div class="clear"></div>
         </div>
         <div class="clear"></div>
@@ -138,42 +203,214 @@
     </div>
     <div class="clear"></div>
     <br>
-    <div class="homeleft">
-      <h1>INFO HERE</h1>
-      <h1>INFO HERE</h1>
-      <h1>INFO HERE</h1>
-      <h1>INFO HERE</h1>
-      <h1>INFO HERE</h1>
-    </div>
-    <div class="homeleft">
-      <h1>INFO HERE</h1>
-      <h1>INFO HERE</h1>
-      <h1>INFO HERE</h1>
-      <h1>INFO HERE</h1>
-      <h1>INFO HERE</h1>
-      <div class="clear"></div>
-    </div>
+    <!-- beginning of container -->
+    <div class="content">
+      <div id="mainhome" class="mainhome">
+        <div class="homelarge">
+                <h1>Our Mission</h1>
+          <p> At our restaurants, we pride ourselves on high quality food and great friendly service. </p>
+          <p> All of our locations feature specials, happy hour, as well as a variety of beer and liquor selections! </p>
+          <p> It is our goal to treat you to a wonderful dinner and a great dining experience! </p>
+          <p>If you have any questions, please feel free to contact us!</p>
+          <div class="clear"></div>
+        </div>
+            <p>  <img class="mainimg" src="im/topleft.jpg" />  <img class="mainimg" src="im/topright.jpg" /><img class="mainimgright" src="im/triple.jpg" /></p>
+        <p> <img class="bmainimg" src="im/topmid.jpg" /> </p>
+              <div class="clear"</div>
+      <div class="homeleft">
+        <h1> Sports, Wings, Beer! </h1>
+        <p>  Stop in and watch your favorite Minnesota teams! </p>
+        <p> Grab a beer and an order of our renowned bone-in or boneless wings. </p>
+        <p> Steakhouse meet sports bar! Our locations provide a perfect ambience whether you're here with the family, or here with your buddies.</p>
+        <p> Monday is Veteran's night! Just bring your military ID, and you plus one guest will receive half price on your food.</p>
+      </div>
+      <div class="homeleft">
+        <h1>Duffy's Triple Stop!</h1>
+        <p>Sponsored by Apol's in Raymond MN, the Duffy's triple stop is a fun an exciting way to get out of the house and explore Minnesota.</h1>
+        <p>Triple stop 2017 Winners:</p>
+        <p>First Place:</p>
+        <p>Second Place:</p>
+        <p>Third Place:</p>
+        <p>Triple stop runs from April 15 - October 15, so come by later for information on next year's event.</p>
+        <div class="clear"></div>
+      </div>
 
-    <div class="homelarge">
-      <h1>INFO HERE</h1>
-      <h1>INFO HERE</h1>
-      <h1>INFO HERE</h1>
-      <h1>INFO HERE</h1>
-      <h1>INFO HERE</h1>
       <div class="clear"></div>
-    </div><br>
-    <div class="clear"></div>
-    <Br>
+      <Br>
+      </div>
+      <Br>
+      </div>
+    </div>
+      <!-- End of main container -->
+  <div id="redwoodf">
+      <div class="redwood">
+              <h1>Redwood Falls</h1>
+          <div class="redwoodcontainersm">
+                  <H2>Hometown Greatness</h2>
+                    <p>Sit down for a beer and wings, or bring the family and choose from a plethora of fresh, mouth watering meals.</p>
+                    <p>Stop in and try our made from scratch bloody mary mix. Combining a slight spice with that rich flavor you look for in your favorite mealtime drink.</p>
+                    <p>Check out our outdoor patio, which can seat over 40 guests!</p>
+                  </div>
+                            <img src="im/redwoodout.jpg" />
+                            <div class="clear"></div>
+                            <div class="redwoodleft">
+                                      <img src="im/redwoodlogo.jpg" />
+                            <div class="redwoodcontainersm">
+          <h2>Happy Hour / Specials</h2>
+            <p>Half price Potato Skins, Mexi-Skins, and Chips & Salsa.</p>
+            <p>7 Different tap beer options - $2.00.</p>
+            <p>Happy hour runs from 3:00 - 6:00pm, and resumes 8:00 - 10:00 pm Monday - Thursday</p>
+            <p>Daily lunch special featured everyday starting at 11:00 am.</p>
+            <p>Hosting an event, birthday party, christmas party, or even a retirement party? Click Here to reserve our banquet area.</p>
+      <div class="clear"></div>
+     </div>
+                            <div class="clear"> </div>
+                          </div>
+                                                    <div class="clear"> </div>
+<br>
+<br>
+                            <div class="redwoodcontainer">
+              <h2>Daily Specials</h2>
+              <p id="special"> Monday: </p><p id="specdet">Half price for a veteran and one guest. (Must bring military ID).</p>
+              <p id="special"> Tuesday: </p><p id="specdet">Mexican Night! Buy one mexican entree, get a second half off.</p>
+              <p id="special"> Wednesday: </p><p id="specdet">14 oz. Hamburger Steak loaded with mushroom and onion. Comes with breadstick and choice of potato.</p>
+              <p id="special"> Thursday: </p><p id="specdet">Walleye, includes breadstick and choice of potato.</p>
+              <p id="special"> Friday & Saturday</p><p id="specdet">PRIME RIB!!! Choose between King Cut or Queen. Includes breadstick, vegetables, and choice of potato.</p>
+              <p id="special"> Sunday: </p><p id="specdet">All you can eat pork ribs loaded with your favorite wing sauce. Includes bottomless sides.</p>
+                            </div>
+                  </div>
+      <div class="clear"></div>
+    </div>
+  <!-- End of REDWOOD -->
+  <div id="montevideo">
+  <div class="redwood">
+          <h1>Montevideo</h1>
+      <div class="redwoodcontainersm">
+              <H2>Hometown Greatness</h2>
+                <p>Sit down for a beer and wings, or bring the family and choose from a plethora of fresh, mouth watering meals.</p>
+                <p>Stop in and try our made from scratch bloody mary mix. Combining a slight spice with that rich flavor you look for in your favorite mealtime drink.</p>
+                <p>Check out our outdoor patio, which can seat over 40 guests!</p>
+              </div>
+                        <img src="im/monteout.jpg" />
+                        <div class="clear"></div>
+                        <div class="redwoodleft">
+                                  <img src="im/montelogo.jpg" />
+                        <div class="redwoodcontainersm">
+      <h2>Happy Hour / Specials</h2>
+        <p>Half price Potato Skins, Mexi-Skins, and Chips & Salsa.</p>
+        <p>7 Different tap beer options - $2.00.</p>
+        <p>Happy hour runs from 3:00 - 6:00pm, and resumes 8:00 - 10:00 pm Monday - Thursday</p>
+        <p>Daily lunch special featured everyday starting at 11:00 am.</p>
+        <p>Hosting an event, birthday party, christmas party, or even a retirement party? Click Here to reserve our banquet area.</p>
+  <div class="clear"></div>
   </div>
-  <Br>
+                        <div class="clear"> </div>
+                      </div>
+                                                <div class="clear"> </div>
   <br>
+  <br>
+                        <div class="redwoodcontainer">
+          <h2>Daily Specials</h2>
+          <p id="special"> Monday: </p><p id="specdet">Half price for a veteran and one guest. (Must bring military ID).</p>
+          <p id="special"> Tuesday: </p><p id="specdet">Mexican Night! Buy one mexican entree, get a second half off.</p>
+          <p id="special"> Wednesday: </p><p id="specdet">14 oz. Hamburger Steak loaded with mushroom and onion. Comes with breadstick and choice of potato.</p>
+          <p id="special"> Thursday: </p><p id="specdet">Walleye, includes breadstick and choice of potato.</p>
+          <p id="special"> Friday & Saturday</p><p id="specdet">PRIME RIB!!! Choose between King Cut or Queen. Includes breadstick, vegetables, and choice of potato.</p>
+          <p id="special"> Sunday: </p><p id="specdet">All you can eat pork ribs loaded with your favorite wing sauce. Includes bottomless sides.</p>
+                        </div>
+              </div>
+  <div class="clear"></div>
+</div>
+<!-- End of MONTEVIDEO -->
+<div id="glenwood">
+<div class="redwood">
+        <h1>Glenwood</h1>
+    <div class="redwoodcontainersm">
+            <H2>Hometown Greatness</h2>
+              <p>Sit down for a beer and wings, or bring the family and choose from a plethora of fresh, mouth watering meals.</p>
+              <p>Stop in and try our made from scratch bloody mary mix. Combining a slight spice with that rich flavor you look for in your favorite mealtime drink.</p>
+              <p>Check out our outdoor patio, which can seat over 40 guests!</p>
+            </div>
+                      <img src="im/glenout.jpg" />
+                      <div class="clear"></div>
+                      <div class="redwoodleft">
+                                <img src="im/glenlogo.jpg" />
+                      <div class="redwoodcontainersm">
+    <h2>Happy Hour / Specials</h2>
+      <p>Half price Potato Skins, Mexi-Skins, and Chips & Salsa.</p>
+      <p>7 Different tap beer options - $2.00.</p>
+      <p>Happy hour runs from 3:00 - 6:00pm, and resumes 8:00 - 10:00 pm Monday - Thursday</p>
+      <p>Daily lunch special featured everyday starting at 11:00 am.</p>
+      <p>Hosting an event, birthday party, christmas party, or even a retirement party? Click Here to reserve our banquet area.</p>
+<div class="clear"></div>
+</div>
+                      <div class="clear"> </div>
+                    </div>
+                                              <div class="clear"> </div>
+<br>
+<br>
+                      <div class="redwoodcontainer">
+        <h2>Daily Specials</h2>
+        <p id="special"> Monday: </p><p id="specdet">Half price for a veteran and one guest. (Must bring military ID).</p>
+        <p id="special"> Tuesday: </p><p id="specdet">Mexican Night! Buy one mexican entree, get a second half off.</p>
+        <p id="special"> Wednesday: </p><p id="specdet">14 oz. Hamburger Steak loaded with mushroom and onion. Comes with breadstick and choice of potato.</p>
+        <p id="special"> Thursday: </p><p id="specdet">Walleye, includes breadstick and choice of potato.</p>
+        <p id="special"> Friday & Saturday</p><p id="specdet">PRIME RIB!!! Choose between King Cut or Queen. Includes breadstick, vegetables, and choice of potato.</p>
+        <p id="special"> Sunday: </p><p id="specdet">All you can eat pork ribs loaded with your favorite wing sauce. Includes bottomless sides.</p>
+                      </div>
+            </div>
+<div class="clear"></div>
+</div>
+<!-- End of GLENWOOD -->
+<div id="windom">
+<div class="redwood">
+        <h1>Windom</h1>
+    <div class="redwoodcontainersm">
+            <H2>Hometown Greatness</h2>
+              <p>Sit down for a beer and wings, or bring the family and choose from a plethora of fresh, mouth watering meals.</p>
+              <p>Stop in and try our made from scratch bloody mary mix. Combining a slight spice with that rich flavor you look for in your favorite mealtime drink.</p>
+              <p>Check out our outdoor patio, which can seat over 40 guests!</p>
+            </div>
+                      <img src="im/redwoodout.jpg" />
+                      <div class="clear"></div>
+                      <div class="redwoodleft">
+                                <img src="im/redwoodlogo.jpg" />
+                      <div class="redwoodcontainersm">
+    <h2>Happy Hour / Specials</h2>
+      <p>Half price Potato Skins, Mexi-Skins, and Chips & Salsa.</p>
+      <p>7 Different tap beer options - $2.00.</p>
+      <p>Happy hour runs from 3:00 - 6:00pm, and resumes 8:00 - 10:00 pm Monday - Thursday</p>
+      <p>Daily lunch special featured everyday starting at 11:00 am.</p>
+      <p>Hosting an event, birthday party, christmas party, or even a retirement party? Click Here to reserve our banquet area.</p>
+<div class="clear"></div>
+</div>
+                      <div class="clear"> </div>
+                    </div>
+                                              <div class="clear"> </div>
+<br>
+<br>
+                      <div class="redwoodcontainer">
+        <h2>Daily Specials</h2>
+        <p id="special"> Monday: </p><p id="specdet">Half price for a veteran and one guest. (Must bring military ID).</p>
+        <p id="special"> Tuesday: </p><p id="specdet">Mexican Night! Buy one mexican entree, get a second half off.</p>
+        <p id="special"> Wednesday: </p><p id="specdet">14 oz. Hamburger Steak loaded with mushroom and onion. Comes with breadstick and choice of potato.</p>
+        <p id="special"> Thursday: </p><p id="specdet">Walleye, includes breadstick and choice of potato.</p>
+        <p id="special"> Friday & Saturday</p><p id="specdet">PRIME RIB!!! Choose between King Cut or Queen. Includes breadstick, vegetables, and choice of potato.</p>
+        <p id="special"> Sunday: </p><p id="specdet">All you can eat pork ribs loaded with your favorite wing sauce. Includes bottomless sides.</p>
+                      </div>
+            </div>
+<div class="clear"></div>
+</div>
+<!-- End of WINDOM -->
+  <br><br>
+
   <div class="footer">
     <p> Copyright Duffys</p>
     <p> Duffys contact info</p>
     <p> Other Duffys Info </p>
   </div>
-  </div>
 
+  </div>
 </body>
 
 </html>

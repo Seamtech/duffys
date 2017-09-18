@@ -1,0 +1,37 @@
+<!-- beginning of container -->
+<div class="content">
+  <div class="homelarge">
+          <h1>Our Mission</h1>
+    <p> At our restaurants, we pride ourselves on high quality food and great friendly service. </p>
+    <p> All of our locations feature specials, happy hour, as well as a variety of beer and liquor selections! </p>
+    <p> It is our goal to treat you to a wonderful dinner and a great dining experience! </p>
+    <p>If you have any questions, please feel free to contact us!</p>
+    <div class="clear"></div>
+  </div>
+      <p>  <img class="mainimg" src="im/topleft.jpg" />  <img class="mainimg" src="im/topright.jpg" /><img class="mainimgright" src="im/triple.jpg" /></p>
+  <p> <img class="bmainimg" src="im/topmid.jpg" /> </p>
+        <div class="clear"</div>
+<div class="homeleft">
+  <h1> Sports, Wings, Beer! </h1>
+  <p>  Stop in and watch your favorite Minnesota teams! </p>
+  <p> Grab a beer and an order of our renowned bone-in or boneless wings. </p>
+  <p> Steakhouse meet sports bar! Our locations provide a perfect ambience whether you're here with the family, or here with your buddies.</p>
+  <p> Monday is Veteran's night! Just bring your military ID, and you plus one guest will receive half price on your food.</p>
+</div>
+<div class="homeleft">
+  <h1>Duffy's Triple Stop!</h1>
+  <p>Sponsored by Apol's in Raymond MN, the Duffy's triple stop is a fun an exciting way to get out of the house and explore Minnesota.</h1>
+  <p>Triple stop 2017 Winners:</p>
+  <p>First Place:</p>
+  <p>Second Place:</p>
+  <p>Third Place:</p>
+  <p>Triple stop runs from April 15 - October 15, so come by later for information on next year's event.</p>
+  <div class="clear"></div>
+</div>
+
+<div class="clear"></div>
+<Br>
+</div>
+<Br>
+</div>
+<!-- End of main container -->

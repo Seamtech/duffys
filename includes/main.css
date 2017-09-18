@@ -10,36 +10,177 @@ body {
     background-attachment: fixed;
     background-position: top;
     background-color: beige;
-} 
+}
+fieldset {
+    border-style: none !important;
+}
+.contact {
+  width: 100%;
+  color: beige;
+  border-color: #8B4513;
+  border-style: outset;
+  box-shadow: .8em .8em .5em #000;
+  border-width: .5em
+}
+.contact #contact button {
+  margin-left: 0 !important;
+}
+.contact #contact {
+  margin-left: 2em;
+  width: 55%;
+  height: 1.35em;
+  color: beige;
+  border-style: groove;
+  border-color: red;
+  background-color: #333;
+  border-radius: .5em;
+  border-size: 1.5em;
+  box-shadow: 2pt 2pt 1pt #000;
+}
+.contactbutton {
+  width: 100%;
+  margin: 0 auto;
+}
+.button {
+  width: 15%;
+  margin-left: 40%;
+  height: 1.35em;
+  color: beige;
+  border-style: groove;
+  border-color: red;
+  background-color: #333;
+  border-radius: .5em;
+  box-shadow: 2pt 2pt 1pt #000;
+}
+.mainimg {
+  box-shadow: 1em 1em .5em #000;
+  margin: auto;
+  margin-top: 1em;
+  float: left;
+  margin-left: 10%;
+}
+.bmainimg {
+  box-shadow: 1em 1em .5em #000;
+  margin: auto;
+  margin-top: 1em;
+  float: left;
+  margin-left: 14%;
+}
+  .mainimgright {
+    box-shadow: 1em 1em .5em #000;
+    margin-top: 1em;
+    margin-right: 10%;
+    float: right;
+  }
+.contact h1 {
+  font-size: 1em;
+  text-align: center;
+  display:block;
+  width: 99%;
+  margin: 0 auto;
+  color: beige;
+}
+.contactleft {
+  float:left;
+  width: 46%;
+}
+.contactright {
+  float: right;
+  width: 40%;
+  margin-right: 10%;
+}
+.contactright #contactright {
+  width: 95%;
+  height: 4.5em;
+  color: beige;
+  border-style: groove;
+  border-color: red;
+  background-color: #333;
+  border-radius: .5em;
+  box-shadow: 2pt 2pt 1pt #000;
+}
 .clear {
    clear: both;
+}
+.content {
+  width: 100%;
+  display: block;
 }
 .navbutton {
    display: inline;
    float:right;
    margin-left: 1em;
 }
-.navbutton button {
-   border-top:2px solid #777777;
-   border-right:2px solid #333333;
-   border-bottom:0px solid #444444;
-   border-left:2px solid #777777;
-   background-color: red;
-}
 a.title {
 		color:#000000;
-		font-size:12px;
+		font-size:12pt;
 		font-family:Arial;
 }
-
+.top {
+  overflow:hidden;
+  margin: 0 auto;
+  margin-top: 1em;
+  width: 90%;
+  height: 100%;
+}
+.topleft {
+  float: left;
+  margin-left: 10%;
+}
+.topright {
+  float: right;
+  margin-right: 10%;
+  width: 40%;
+  border-style: none !important;
+}
 a.font1 {
 		color:#CACACA;
 		text-align:center;
 }
+.header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 h1 {
-        font-family: "Bebas Neue", Arial; 
-        font-size: 12px; 
-        color: beige;
+        font-family: "Bebas Neue", Arial;
+        font-size: 2.5em;
+        color: red;
+        margin-bottom: .5em;
+}
+.homelarge p {
+  font-family:fantasy;
+  font-size: 1.25em;
+  color: red;
+          margin-left: 1em;
+          margin-bottom: 1em;
+          text-align: center;
+}
+p {
+  font-family:fantasy;
+  font-size: 1.25em;
+  color: beige;
+          margin-left: 1em;
+          margin-bottom: 1em;
+          text-align: left;
+}
+h2 {
+  font-family: "Bebas Neue", Arial;
+  font-size: 2em;
+  color: red;
+  margin-bottom: .5em;
+}
+p#special {
+  font-family: "Bebas Neue", Arial;
+  font-size: 1.5em;
+  color: red;
+  margin-bottom: .5em;
+}
+p#specdet {
+  font-family: "Bebas Neue", Arial;
+  font-size: 1em;
+  color: beige;
+  margin-bottom: .5em;
 }
 div.header {
    margin: 0 auto;
@@ -49,57 +190,120 @@ div.header {
 }
 .menuleft img {
    border-radius: 50%;
+   width: 10%;
 }
-.menu img {
-   margin-left: 1em;
+.menuloc {
 }
 .greet {
    margin-left: 5em;
    position: relative;
    display: inline;
 }
+.mainout {
+  width: 98%;
+  height: 100%;
+  border-color: black;
+  border-style: solid;
+  border-radius: 5pt;
+  box-shadow: 10pt 10pt 5pt #000;
+  background-color: red;
+
+}
 div.main {
 	width: 97%;
    display: inline-block;
    height: 100%;
 	margin-left:1.25%;
+  margin-top: 1em;
    position: relative;
 	text-align: center;
    border-color: #8e2323;
    background-image: url('../im/dark_wood.png');
    border-style: none;
    border-bottom: none;
-   box-shadow: 10px 10px 5px #000;
+   box-shadow: 10pt 10pt 5pt #000;
    border-top: none;
-   border-radius: 1px;
+   border-radius: 5pt;
 }
 .homeleft {
-   background-color: brown;
+   background-color: black;
    border: solid;
    width: 45%;
    float: left;
    margin-top: 3em;
-   margin-left: 2em; 
-   border-radius: 12px;
-   box-shadow: 10px 10px 5px #000;
+   margin-left: 2em;
+   border-radius: 1em;
+   box-shadow: 5pt 5pt 5pt red,
+              -5pt -5pt 5pt red;
 }
 .homelarge{
-   background-color: brown;
+   background-color: black;
    border: solid;
    width: 90%;
    float: left;
    margin-top: 3em;
-   margin-left: 3em; 
-   border-radius: 12px;
-   box-shadow: 10px 10px 5px #000;.
+   margin-left: 3em;
+   border-radius: 1em;
+   box-shadow: 5pt 5pt 5pt red,
+              -5pt -5pt 5pt red;
    margin-bottom: 1em;
+}
+.redwood {
+   width: 95%;
+   float: left;
+   margin-top: 3em;
+   margin-left: 3em;
+}
+.redwood img {
+box-shadow: 1em 1em .5em #000;
+width: 30%;
+margin: auto;
+margin-top: 1em;
+float: left;
+margin-left: 10%;
+overflow: hidden;
+}
+.redwoodcontainer {
+  background-color: black;
+  border: solid;
+  width: 65%;
+  margin-top: 1em;
+  box-shadow: 5pt 5pt 5pt red,
+             -5pt -5pt 5pt red;
+  border-radius: 1em;
+  margin-left: 15%;
+}
+.redwoodcontainersm {
+  background-color: black;
+  overflow:hidden;
+    float:left;
+  border: solid;
+  width: 49%;
+  margin-top: 2em;
+  margin-left: 2em;
+  box-shadow: 5pt 5pt 5pt red,
+             -5pt -5pt 5pt red;
+                border-radius: 1em;
+}
+.redwoodleft {
+   width: 100%;
+   float: left;
+   margin-left: 2em;
+}
+.redwoodleft img {
+box-shadow: 1em 1em .5em #000;
+width: 30%;
+margin-top: 1em;
+float: left;
+margin-left: 4%;
+overflow: hidden;
 }
 .homesm{
    background-color: brown;
    border: solid;
    width: 100%;
    float: left;
-   border-radius: 12px;
+   border-radius: 1em;
    box-shadow: 10px 10px 5px #000;.
    margin-bottom: 1em;
 }
@@ -113,35 +317,17 @@ div.container {
 #container {
    font-size: 12px;
 }
-div.left {
-	width: 375px;
-	margin:0 auto;
-	margin-left:22.5px;
-	float:left;
-	color:#CACACA;
-   position: relative;
-}
-div.right {
-	width: 375px;
-	margin:0 auto;
-	margin-left:2.5px;
-	text-align: center;
-   position: relative;
-	float:left;
-	color:#CACACA;
-}
 hr.hr1 {
 	color: #171717;
 	width: auto;
 }
 .menuleft {
-	width: 20%;
-   
-   position: relative;
+	width: 15%;
+  position: relative;
 	margin:0 auto;
-   margin-top: 1em;
-   margin-left: 5%;
-   color: beige;
+  margin-top: 1em;
+  margin-left: 8%;
+  color: beige;
 	float: left;
    text-align:center;
 }
@@ -161,7 +347,7 @@ hr.hr1 {
    margin-left:1.25%;
    width: 45%;
       box-shadow: 5px 5px 1px #000;
-      border-radius: 5px;
+      border-radius: .5em;
       border-color: none;
 }
 .footer {
@@ -170,22 +356,22 @@ hr.hr1 {
    width: 100%;
    margin: 0 auto;
 }
-ul {
+.homesm ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    border-radius: 5px;
+    border-radius: .5em;
    box-shadow: 10px 10px 15px #000;
 }
 
-li {
+.homesm li {
     float: left;
     border-right: 1px solid #8e2323;
 }
 
-li a {
+.homesm li a {
     display: block;
     color: white;
     text-align: center;
@@ -197,13 +383,14 @@ li a {
     background-color: red;
 }
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+.homesm li a:hover {
     background-color: #111;
 }
 .monte {
 }
 .redwood {
 }
+
 .glenwood {
 }
 .windom {
