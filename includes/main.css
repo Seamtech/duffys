@@ -4,6 +4,10 @@
     margin:0;
     padding:0;
 }
+/*
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Ubuntu Condensed', sans-serif;
+*/
 body {
 	 background-image: url('../im/woodbg.jpeg');
     background-repeat: no-repeat;
@@ -157,7 +161,7 @@ h1 {
           text-align: center;
 }
 p {
-  font-family:fantasy;
+      font-family: 'Exo', sans-serif;
   font-size: 1.25em;
   color: beige;
           margin-left: 1em;
@@ -171,13 +175,13 @@ h2 {
   margin-bottom: .5em;
 }
 p#special {
-  font-family: "Bebas Neue", Arial;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5em;
   color: red;
   margin-bottom: .5em;
 }
 p#specdet {
-  font-family: "Bebas Neue", Arial;
+font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 1em;
   color: beige;
   margin-bottom: .5em;
